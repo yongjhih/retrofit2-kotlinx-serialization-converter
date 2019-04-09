@@ -22,12 +22,13 @@ sourceCompatibility = JavaVersion.VERSION_1_6
 repositories {
   mavenCentral()
   maven { url "https://kotlin.bintray.com/kotlinx" }
+  maven { url 'https://jitpack.io' }
 }
 
 dependencies {
   api 'com.squareup.retrofit2:retrofit:2.5.0'
   api "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}"
-  api 'org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.10.0'
+  api 'com.github.yongjhih.kotlinx-serialization:kotlinx-serialization-runtime:13496cbef6'
 
   testImplementation 'junit:junit:4.12'
   testImplementation 'com.squareup.okhttp3:mockwebserver:3.11.0'
